@@ -1,0 +1,27 @@
+<ion-view title="Cadastro de Pessoas">
+	<ion-header-bar class="bar bar-header bar-calm">
+		<h1 class="title">Cadastro Agenda</h1>
+		<button class="button icon ion-home" ng-click="voltar(pessoa)"></button>
+	</ion-header-bar>
+	<ion-content class="has-header" padding="true">
+		
+		<label class="item item-input n-p-l">
+			<input class="font-h1 input" type="text" placeholder="Código" name="" ng-model="pessoa.id">
+		</label>
+<br/>
+		<label class="item item-input n-p-l">
+			<input class="font-h1 input" type="text" placeholder="Nome Completo" name="" ng-model="pessoa.nome">
+		</label>
+<br/>
+		<label class="item item-input n-p-l">
+			<input class="font-h1 input" type="text" placeholder="Telefone" name="" ng-model="pessoa.telefone">
+		</label>
+<br/>
+		<label class="item item-input n-p-l">
+			<input class="font-h1 input" type="text" placeholder="Endereço de E-mail" name="" ng-model="pessoa.email">
+		</label>
+
+		<button class="button button-calmo button-full" ng-click="salvar(pessoa)">Cadastrar</button>
+
+	</ion-content>
+</ion-view>
